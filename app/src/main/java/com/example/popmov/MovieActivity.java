@@ -138,12 +138,12 @@ public class MovieActivity extends AppCompatActivity {
                     {
                         trailers.addAll(trailerResponse.getTrailers());
                         tAdapter.notifyDataSetChanged();
-                        Log.d("TAG","si"+trailers.size());
+
                         progressBar.setVisibility(View.GONE);
                     }
-                    Log.d("TAG","sqi"+trailers.size());
+
                 }
-                Log.d("TAG","swi"+trailers.size());
+
             }
         });
     }
@@ -262,7 +262,6 @@ public class MovieActivity extends AppCompatActivity {
     private void updateData() {
         HashMap<String ,Object> hashMap=new HashMap<>();
         hashMap.put("movies_id",movies_id);
-        Log.d("TAG","update"+movies_id);
         new Thread(new Runnable() {
             @Override
             public void run() {

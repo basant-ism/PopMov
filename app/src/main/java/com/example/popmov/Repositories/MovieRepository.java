@@ -71,12 +71,12 @@ public LiveData<Movie> getFavoriteMovies(List<Integer>ids)
             @Override
             public void onResponse(Call<TrailerResponse> call, Response<TrailerResponse> response) {
                 data.setValue(response.body());
-                Log.d("TAG","trailr0"+data);
+
             }
 
             @Override
             public void onFailure(Call<TrailerResponse> call, Throwable t) {
-                Log.d("TAG","trailrexp"+t.getMessage());
+
 
             }
         });
@@ -89,15 +89,13 @@ public LiveData<Movie> getFavoriteMovies(List<Integer>ids)
             @Override
             public void onResponse(Call<ReviewResponse> call, Response<ReviewResponse> response) {
                 data.setValue(response.body());
-                Log.d("TAG","review0"+
-                        data);
-                Log.d("TAG","id"+id);
+
 
             }
 
             @Override
             public void onFailure(Call<ReviewResponse> call, Throwable t) {
-                Log.d("TAG","reviwexp"+t.getMessage());
+
             }
         });
         return  data;

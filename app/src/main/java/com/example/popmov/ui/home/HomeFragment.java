@@ -62,11 +62,11 @@ public class HomeFragment extends Fragment {
              public void onScrolled(@NonNull RecyclerView recyclerView, int dx, int dy) {
                  super.onScrolled(recyclerView, dx, dy);
                  int position=llm.findLastVisibleItemPosition();
-                 Log.d("TAG","new state00"+position);
+
                  if(position>movies.size()-3)
                  {
                      page++;
-                     Log.d("TAG","page"+page);
+
                      getMovies();
                  }
              }

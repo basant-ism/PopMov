@@ -127,14 +127,9 @@ public class FavoriteFragment extends Fragment {
                 public void onChanged(Movie movie) {
                     if(movie!=null)
                     {
-
-
-                            movies.add(movie);
+                        movies.add(movie);
                             progressBar.setVisibility(View.GONE);
                             adapter.notifyDataSetChanged();
-
-
-
                     }
 
                 }
