@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightBlack"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.logout.LogoutFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_layout"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="10dp"
+        android:padding="10dp"
+        android:background="@color/lightBlack"
+        android:layout_margin="10dp"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginTop="20dp"
+                android:id="@+id/tv_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:text="Do you want logout?" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_below="@id/tv_logout"
+                android:layout_marginTop="30dp"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="No"
+                    android:layout_margin="20dp"
+                    android:id="@+id/btn_no"/>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="YES"
+                    android:layout_margin="20dp"
+                    android:id="@+id/btn_yes"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
